@@ -1,14 +1,14 @@
 <!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
-<!--  Last Published: Sat Oct 22 2022 01:59:02 GMT+0000 (Coordinated Universal Time)  -->
-<html data-wf-page="633a4a491ccadf524fc9e133" data-wf-site="633a4a491ccadf5968c9e0c8" lang="en">
+<!--  Last Published: Fri Nov 18 2022 21:01:44 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="6377040236ca12071510b5b5" data-wf-site="633a4a491ccadf5968c9e0c8" lang="en">
 <head>
   <meta charset="utf-8">
   <title>Order Confirmation - Core - Webflow Ecommerce website template</title>
-  <meta content="Quantum One is engineering humanity's optimal digital trust paradigm. " name="description">
+  <meta content="Core Webflow template is highly suitable for creating websites for crypto startups, apps, software, SaaS, and technology businesses." name="description">
   <meta content="Order Confirmation - Core - Webflow Ecommerce website template" property="og:title">
-  <meta content="Quantum One is engineering humanity's optimal digital trust paradigm. " property="og:description">
+  <meta content="Core Webflow template is highly suitable for creating websites for crypto startups, apps, software, SaaS, and technology businesses." property="og:description">
   <meta content="Order Confirmation - Core - Webflow Ecommerce website template" property="twitter:title">
-  <meta content="Quantum One is engineering humanity's optimal digital trust paradigm. " property="twitter:description">
+  <meta content="Core Webflow template is highly suitable for creating websites for crypto startups, apps, software, SaaS, and technology businesses." property="twitter:description">
   <meta property="og:type" content="website">
   <meta content="summary_large_image" name="twitter:card">
   <meta content="width=device-width, initial-scale=1" name="viewport">
@@ -27,20 +27,16 @@
   <div data-collapse="all" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
     <div class="w-layout-grid grid-navbar">
       <div data-w-id="e8cea9b6-4627-f1cd-fec0-16ebfaf55914" class="nav">
-        <a href="index.html" class="brand w-nav-brand"><img src="images/Color-logo---no-background.svg" loading="lazy" alt="" class="logo"></a>
+        <a href="index.html" class="brand w-nav-brand"><img loading="lazy" src="images/Color-logo---no-background.svg" alt="" class="logo"></a>
       </div>
       <div data-w-id="e8cea9b6-4627-f1cd-fec0-16ebfaf55917" class="nav">
-        <nav role="navigation" class="nav-menu w-nav-menu">
-          <a href="index.html" class="nav-link w-nav-link">Home</a>
-          <a href="team-members.html" class="nav-link w-nav-link">About</a>
-          <a href="marketing-and-community-growth.html" class="nav-link w-nav-link">Technology</a>
-          <a href="blog.html" class="nav-link w-nav-link">Blog</a>
-          <a href="contact.html" class="nav-link w-nav-link">Contact</a>
+        <nav role="navigation" class="nav-menu nav-link-2 w-nav-menu">
+          <a href="index.html" class="nav-home w-nav-link">Home</a>
         </nav>
       </div>
       <div class="nav right">
         <div data-node-type="commerce-cart-wrapper" data-open-product="" data-wf-cart-type="modal" data-wf-cart-query="" data-wf-page-link-href-prefix="" class="w-commerce-commercecartwrapper cart">
-          <a href="#" data-node-type="commerce-cart-open-link" class="w-commerce-commercecartopenlink cart-button w-inline-block">
+          <a data-node-type="commerce-cart-open-link" href="#" class="w-commerce-commercecartopenlink cart-button w-inline-block">
             <div data-w-id="3fe0fbe3-ccc5-bc56-8250-407ed953b481" class="text-cart w-inline-block">Cart</div>
             <div data-w-id="3fe0fbe3-ccc5-bc56-8250-407ed953b483" class="w-commerce-commercecartopenlinkcount cart-quantity">0</div>
           </a>
@@ -48,7 +44,7 @@
             <div data-node-type="commerce-cart-container" class="w-commerce-commercecartcontainer cart-container">
               <div class="w-commerce-commercecartheader cart-header">
                 <h5 class="w-commerce-commercecartheading">Your Cart</h5>
-                <a href="#" data-node-type="commerce-cart-close-link" class="w-commerce-commercecartcloselink close-button w-inline-block"><img src="images/close.svg" loading="lazy" alt="" class="icon-close"></a>
+                <a data-node-type="commerce-cart-close-link" href="#" class="w-commerce-commercecartcloselink close-button w-inline-block"><img loading="lazy" src="images/close.svg" alt="" class="icon-close"></a>
               </div>
               <div class="border-ecommerce"></div>
               <div class="w-commerce-commercecartformwrapper">
@@ -62,7 +58,7 @@
                       <div class="w-commerce-commercecartordervalue text-subtotal"></div>
                     </div>
                     <div>
-                      <div style="position:relative" data-wf-paypal-button="{&quot;layout&quot;:&quot;horizontal&quot;,&quot;color&quot;:&quot;black&quot;,&quot;shape&quot;:&quot;pill&quot;,&quot;label&quot;:&quot;paypal&quot;,&quot;tagline&quot;:false,&quot;note&quot;:false}" class="paypal">
+                      <div style="position:relative" data-wf-paypal-button="{&quot;tagline&quot;:false,&quot;layout&quot;:&quot;horizontal&quot;,&quot;color&quot;:&quot;black&quot;,&quot;shape&quot;:&quot;pill&quot;,&quot;label&quot;:&quot;paypal&quot;,&quot;note&quot;:false}" class="paypal">
                         <div style="position:absolute;top:0;left:0;width:100%;height:100%;opacity:0;z-index:999;cursor:auto"></div>
                       </div>
                       <div data-node-type="commerce-cart-quick-checkout-actions" class="web-payments">
@@ -99,7 +95,7 @@
                           <div>Pay with browser.</div>
                         </a>
                       </div>
-                      <a href="checkout.html" value="Continue to Checkout" data-node-type="cart-checkout-button" class="w-commerce-commercecartcheckoutbutton checkout-button" data-loading-text="Hang Tight...">Continue to Checkout</a>
+                      <a value="Continue to Checkout" data-node-type="cart-checkout-button" href="checkout.html" class="w-commerce-commercecartcheckoutbutton checkout-button" data-loading-text="Hang Tight...">Continue to Checkout</a>
                     </div>
                   </div>
                 </form>
@@ -115,14 +111,14 @@
           </div>
         </div>
         <div data-w-id="e8cea9b6-4627-f1cd-fec0-16ebfaf55924" class="w-layout-grid grid-button-nav">
-          <a href="#" class="nav-button w-button">Get Started</a>
-          <div class="menu-button w-nav-button">
+          <a href="#" class="nav-button w-button">Login</a>
+          <div class="menu-button menu-button-2 menu-button-3 menu-button-4 w-nav-button">
             <div class="menu-icon w-icon-nav-menu"></div>
           </div>
         </div>
       </div>
     </div>
-    <div class="shadow-navbar"></div>
+    <div class="shadow-navbar div-block div-block-2 div-block-3 div-block-4 div-block-5 div-block-6 div-block-7 div-block-8 div-block-9 div-block-10 accordian-slide-3 none div-block-11 div-block-12 div-block-13 div-block-14 div-block-15 div-block-16 div-block-17 nav-link-7 accordian-slide-1 div-block-18 div-block-19 div-block-20 div-block-21 div-block-22 div-block-23"></div>
   </div>
   <div class="section-hero wf-section">
     <div class="content single-page">
@@ -261,8 +257,8 @@
   <div class="section footer wf-section">
     <div class="content">
       <div class="w-layout-grid grid-footer">
-        <div id="w-node-_6603d099-87ea-d392-449a-caaf2cdb7f91-2cdb7f8e" data-w-id="6603d099-87ea-d392-449a-caaf2cdb7f91" class="block-footer"><img src="images/Color-logo---no-background.png" loading="lazy" srcset="images/Color-logo---no-background-p-500.png 500w, images/Color-logo---no-background-p-800.png 800w, images/Color-logo---no-background-p-1080.png 1080w, images/Color-logo---no-background-p-1600.png 1600w, images/Color-logo---no-background-p-2000.png 2000w, images/Color-logo---no-background-p-2600.png 2600w, images/Color-logo---no-background.png 3177w" sizes="(max-width: 479px) 83vw, 203.51666259765625px" alt="" class="logo-footer">
-          <p class="paragraph-footer">We&#x27;re eliminating blockchain investment risk with solutions that will also unlock $400B of value per year in the US banking sector alone.<br>‍<br>
+        <div id="w-node-_6603d099-87ea-d392-449a-caaf2cdb7f91-2cdb7f8e" data-w-id="6603d099-87ea-d392-449a-caaf2cdb7f91" class="block-footer"><img src="images/Color-logo---no-background.png" loading="lazy" srcset="images/Color-logo---no-background-p-500.png 500w, images/Color-logo---no-background-p-800.png 800w, images/Color-logo---no-background-p-1080.png 1080w, images/Color-logo---no-background-p-1600.png 1600w, images/Color-logo---no-background-p-2000.png 2000w, images/Color-logo---no-background-p-2600.png 2600w, images/Color-logo---no-background.png 3177w" sizes="(max-width: 479px) 100vw, 203.51666259765625px" alt="" class="logo-footer">
+          <p class="paragraph-footer">Humanity&#x27;s optimal digital trust paradigm.<br>
             <a href="mailto:info@yoursite.com" class="link-underlined">inquire@quantumone.network</a>
           </p>
         </div>
