@@ -1829,20 +1829,7 @@ var _extends2 = _interopRequireDefault(__webpack_require__(11));
 
 var _utils = __webpack_require__(354);
 
-var _errorStates = __webpack_require__(739);
-
-Object.keys(_errorStates).forEach(function (key) {
-  if (key === "default" || key === "__esModule") return;
-  if (Object.prototype.hasOwnProperty.call(_exportNames, key)) return;
-  Object.defineProperty(exports, key, {
-    enumerable: true,
-    get: function get() {
-      return _errorStates[key];
-    }
-  });
-});
-
-var _types = __webpack_require__(740);
+var _types = __webpack_require__(739);
 
 Object.keys(_types).forEach(function (key) {
   if (key === "default" || key === "__esModule") return;
@@ -1851,6 +1838,19 @@ Object.keys(_types).forEach(function (key) {
     enumerable: true,
     get: function get() {
       return _types[key];
+    }
+  });
+});
+
+var _errorStates = __webpack_require__(740);
+
+Object.keys(_errorStates).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  if (Object.prototype.hasOwnProperty.call(_exportNames, key)) return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function get() {
+      return _errorStates[key];
     }
   });
 });
@@ -2237,7 +2237,7 @@ var USYS_CONTEXT_PATH = [{
   at: 'context'
 }];
 exports.USYS_CONTEXT_PATH = USYS_CONTEXT_PATH;
-var USER_ACCESS_META_OPTIONS = ['LOGGED_IN'];
+var USER_ACCESS_META_OPTIONS = [_types.USYS_ACCESS_TYPES.LOGGED_IN];
 exports.USER_ACCESS_META_OPTIONS = USER_ACCESS_META_OPTIONS;
 
 /***/ }),
@@ -59783,6 +59783,25 @@ exports.of = of;
 "use strict";
 
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.USYS_ACCESS_TYPES = void 0; // Server email configuration
+// Template fields configuration
+
+var USYS_ACCESS_TYPES = {
+  LOGGED_IN: 'LOGGED_IN',
+  ADMIN_ALWAYS_VISIBLE: 'ADMIN_ALWAYS_VISIBLE'
+};
+exports.USYS_ACCESS_TYPES = USYS_ACCESS_TYPES;
+
+/***/ }),
+/* 740 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
 var _interopRequireDefault = __webpack_require__(0);
 
 var _defineProperty2 = _interopRequireDefault(__webpack_require__(20));
@@ -60002,13 +60021,6 @@ var updateAccountErrorStates = (0, _defineProperty2["default"])({}, UPDATE_ACCOU
   path: ['data', 'users', UPDATE_ACCOUNT_ERROR_CODES.GENERAL_ERROR]
 });
 exports.updateAccountErrorStates = updateAccountErrorStates;
-
-/***/ }),
-/* 740 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
 
 /***/ }),
 /* 741 */
@@ -71569,7 +71581,7 @@ Webflow.define('forms', module.exports = function ($, _) {
     formUrl = "https://webflow.com" + '/api/v1/form/' + siteId; // Work around same-protocol IE XDR limitation - without this IE9 and below forms won't submit
 
     if (retro && formUrl.indexOf("https://webflow.com") >= 0) {
-      formUrl = formUrl.replace("https://webflow.com", "http://formdata.webflow.com");
+      formUrl = formUrl.replace("https://webflow.com", "https://formdata.webflow.com");
     }
 
     signFileUrl = "".concat(formUrl, "/signFile");
