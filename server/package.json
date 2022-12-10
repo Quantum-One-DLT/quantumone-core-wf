@@ -1,0 +1,34 @@
+{
+  "name": "quantumone-core-wf",
+  "version": "1.0.0",
+  "description": "Quantum One DAO's OpenID Connect Express Server",
+  
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run start"
+  },
+  "dependencies": {
+    "debug": "~2.6.9",
+    "dotenv": "^6.1.0",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "express-openid-connect": "^2.11.0",
+    "http-errors": "~1.8.1",
+    "morgan": "~1.10.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Quantum-One-DLT/quantumone-core-wf.git"
+  },
+  "keywords": [
+    "express",
+    "oidc",
+    "auth0"
+  ],
+  "author": "Robert Mourey Jr Quantum One DAO",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Quantum-One-DLT/quantumone-core-wf/issues"
+  },
+  "homepage": "https://github.com/Quantum-One-DLT/quantumone-core-wf#readme"
+}
