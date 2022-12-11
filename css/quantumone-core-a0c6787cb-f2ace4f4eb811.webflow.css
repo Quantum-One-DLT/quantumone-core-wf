@@ -3049,7 +3049,7 @@ figcaption {
 
 .menu-button {
   max-height: none;
-  padding: 18px;
+  padding: 12px;
   border-radius: 0px;
   background-color: transparent;
   color: #ababab;
@@ -3078,7 +3078,7 @@ figcaption {
 
 .menu-icon {
   min-width: 0px;
-  padding: 0px;
+  padding: 0px 2px;
   border: 0px none transparent;
   border-radius: 0px;
   background-color: transparent;
@@ -3088,7 +3088,7 @@ figcaption {
   filter: contrast(157%);
   color: #03fff6;
   font-size: 26px;
-  line-height: 180%;
+  line-height: 120%;
 }
 
 .block-hero {
@@ -11190,7 +11190,7 @@ figcaption {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    padding: 0px;
+    padding: 12px;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
@@ -11199,8 +11199,8 @@ figcaption {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    border: 1px solid #000;
-    border-radius: 15px;
+    border: 0px solid #000;
+    border-radius: 0px;
     background-color: transparent;
     -webkit-transition: background-color 400ms cubic-bezier(.25, .46, .45, .94), -webkit-transform 400ms cubic-bezier(.25, .46, .45, .94);
     transition: background-color 400ms cubic-bezier(.25, .46, .45, .94), -webkit-transform 400ms cubic-bezier(.25, .46, .45, .94);
@@ -12104,7 +12104,7 @@ figcaption {
     border-style: solid;
     border-width: 1px;
     border-color: #182233;
-    background-color: #1d2838;
+    background-color: transparent;
     color: #fff;
     font-size: 16px;
   }
@@ -12115,7 +12115,7 @@ figcaption {
   }
 
   .menu-icon {
-    padding: 0px;
+    padding: 0px 2px;
     box-shadow: none;
     font-size: 18px;
   }

@@ -2,10 +2,9 @@
   "name": "quantumone-core-wf",
   "version": "1.0.0",
   "description": "Quantum One DAO's OpenID Connect Express Server",
-  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run start"
+    "start": "node server.js"
   },
   "dependencies": {
     "debug": "~2.6.9",
@@ -30,5 +29,8 @@
   "bugs": {
     "url": "https://github.com/Quantum-One-DLT/quantumone-core-wf/issues"
   },
-  "homepage": "https://github.com/Quantum-One-DLT/quantumone-core-wf#readme"
+  "homepage": "https://github.com/Quantum-One-DLT/quantumone-core-wf#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
 }
