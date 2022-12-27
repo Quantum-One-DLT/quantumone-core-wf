@@ -19,10 +19,14 @@ app.use(express.json());
 
 const config = {
   authRequired: false,
-  auth0Logout: true
+  auth0Logout: true,
+  secret: 'nhcusd8n09md8bc38dn38b0jkdbl39dnpkdjfu0ksmk',
+  baseURL: 'https://login.quantumone.network',
+  clientID: 'bhdNSYoGGwQJymhHl7aniJ8viS0pE3pm',
+  issuerBaseURL: 'https://dev-ow4wccii.us.auth0.com'
 };
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3001;
 if (!config.baseURL && !process.env.BASE_URL && process.env.PORT && process.env.NODE_ENV !== 'production') {
   config.baseURL = `http://localhost:${port}`;
 }
