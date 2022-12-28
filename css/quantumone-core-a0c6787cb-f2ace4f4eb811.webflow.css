@@ -3048,11 +3048,14 @@ figcaption {
 }
 
 .menu-button {
+  overflow: auto;
   max-height: none;
-  padding: 12px;
-  border-radius: 0px;
+  padding: 8px;
+  border: 1px solid transparent;
+  border-radius: 10px;
   background-color: transparent;
   color: #ababab;
+  font-weight: 500;
 }
 
 .menu-button.w--open {
@@ -12136,7 +12139,8 @@ figcaption {
   .button {
     margin-bottom: 10px;
     border-radius: 15px;
-    background-color: #1d2838;
+    background-color: rgba(29, 40, 56, 0.85);
+    opacity: 0.85;
     font-family: Exo, sans-serif;
     font-weight: 400;
     background-clip: border-box;

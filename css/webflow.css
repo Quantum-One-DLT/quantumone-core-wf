@@ -263,17 +263,6 @@ ol {
   padding-left: 0;
   list-style: none;
 }
-::-webkit-scrollbar-track {
-  background-color: rgba(0, 0, 0, .05);
-  -webkit-border-radius: 20px;
-  border-radius: 20px;
-}
-
-::-webkit-scrollbar-thumb {
-  -webkit-border-radius: 20px;
-  border-radius: 20px;
-  background: rgb(54, 49, 49);
-}
 .w-embed:before,
 .w-embed:after {
   content: " ";
