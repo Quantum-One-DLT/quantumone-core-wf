@@ -19,7 +19,11 @@ app.use(express.json());
 
 const config = {
   authRequired: false,
-  auth0Logout: true
+  auth0Logout: true,
+  secret: 'nchhosef90dilmc.dioldnvfstyhyj',
+  baseURL: 'https://login.quantumone.network',
+  clientID: 'XblLWBFA824c6tN5etQQx67YSFpVvDQE',
+  issuerBaseURL: 'https://dev-ow4wccii.us.auth0.com'
 };
 
 const port = process.env.PORT || 3000;
@@ -36,6 +40,11 @@ app.use(function (req, res, next) {
 });
 
 app.use('/', router);
+
+// req.isAuthenticated is provided from the auth router
+app.get('/', (req, res) => {
+  res.send(req.oidc.isAuthenticated() ? 'Logged in' : 'Logged out');
+});
 
 // Catch 404 and forward to error handler
 app.use(function (req, res, next) {
